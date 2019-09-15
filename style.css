@@ -22,34 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-.header-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.11));
-}
-
-.video-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-
-}
-
-.video-wrapper video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
 .clearfix {
   zoom: 1
 }
@@ -141,6 +113,14 @@ h3 {
 /* HEADER */
 /*--------------------*/
 
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.11)), url(/css/img/Hero-img-min.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
 nav {
   width: 100%;
   height: 100px;
@@ -149,7 +129,6 @@ nav {
 /* Main navi*/
 
 .main-nav {
-  position: relative;
   text-align: right;
   list-style: none;
   margin-top: 65px;
